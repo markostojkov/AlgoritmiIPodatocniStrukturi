@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
@@ -113,7 +115,7 @@ class GodishenOdmor extends Patuvanje {
 }
 
 
-public class Test {
+class Test {
 
     public static void main(String[] args) {
 

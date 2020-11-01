@@ -1,7 +1,9 @@
+package Lab1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ZadacaMaraton {
+class ZadacaMaraton {
 
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
