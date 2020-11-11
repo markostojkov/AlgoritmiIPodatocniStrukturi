@@ -7,37 +7,27 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            BinaryTree binaryTree = new BinaryTree();
+            LinkedList linkedList = new();
 
-            binaryTree.Add(1);
-            binaryTree.Add(2);
-            binaryTree.Add(7);
-            binaryTree.Add(3);
-            binaryTree.Add(10);
-            binaryTree.Add(5);
-            binaryTree.Add(8);
-            binaryTree.Add(83);
-            binaryTree.Add(81);
-            binaryTree.Add(82);
-            binaryTree.Add(68);
-            binaryTree.Add(84);
-            binaryTree.Add(816);
-            binaryTree.Add(87);
-            binaryTree.Add(811);
-            binaryTree.Add(824);
-            binaryTree.Add(8672);
-            binaryTree.Add(877);
-            binaryTree.Add(8332);
-            binaryTree.Add(812);
-            binaryTree.Add(83333);
+/*            linkedList.SortedInsert(1);
+            linkedList.SortedInsert(3);
+            linkedList.SortedInsert(2);
+            linkedList.SortedInsert(5);
+            linkedList.SortedInsert(4);*/
 
-            Console.WriteLine("PreOrder Traversal:");
+            linkedList.Append(1);
+            linkedList.Append(2);
+            linkedList.Append(3);
+            linkedList.Append(4);
+            linkedList.Append(5);
 
-            var nodeList = new List<Node>();
-            nodeList.Add(binaryTree.Root);
+            /*linkedList.Prepend(1);
+            linkedList.Prepend(2);
+            linkedList.Prepend(3);
+            linkedList.Prepend(4);
+            linkedList.Prepend(5);*/
 
-            binaryTree.PrintTree(nodeList);
-            Console.WriteLine();
+            linkedList.Print(linkedList.Head);
         }
     }
 }
