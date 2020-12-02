@@ -188,16 +188,21 @@ class BubbleSortLL {
 
     public static void bubbleSort(DLL<Integer> lista) {
         DLLNode<Integer> firstIterator = lista.getFirst();
+
         while (firstIterator != null) {
             DLLNode<Integer> secondIterator = firstIterator.succ;
+
             while (secondIterator != null) {
+
                 if (firstIterator.element > secondIterator.element) {
                     int temp = firstIterator.element;
                     firstIterator.element = secondIterator.element;
                     secondIterator.element = temp;
                 }
+
                 secondIterator = secondIterator.succ;
             }
+
             firstIterator = firstIterator.succ;
         }
 
